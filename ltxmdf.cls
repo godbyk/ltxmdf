@@ -203,29 +203,70 @@
 \DoNotIndex{\@captype,\@endparenv,\@endparpenalty,\@endpetrue,\@floatpenalty,\@footnotetext,\@ifnextchar,\@undefined,\@tempboxa} 
 \DoNotIndex{\@M,\@empty,\@height,\@mpfn,\@mpfootins,\@mpfootnotetext,\@nil,\@plus,\@width}
 
-\DoNotIndex{\addpenalty,\addvspace,\advance}
+\DoNotIndex{\@captype,\@endparenv,\@endparpenalty,\@endpetrue,\@floatpenalty}
+\DoNotIndex{\@footnotetext,\@ifnextchar,\@undefined,\@tempboxa} 
+\DoNotIndex{\@M,\@empty,\@height,\@mpfn,\@mpfootins,\@mpfootnotetext,\@nil,\@plus,\@width}
+\DoNotIndex{\@afterheading,\@afterindentfalse,\@firstoftwo,\@gobble,\@ifpackageloaded}
+\DoNotIndex{\@nobreaktrue,\@nobreakfalse,\@secondoftwo,\@tempa,\@tempdima}
+
+\DoNotIndex{\addpenalty,\addvspace,\advance,\afterassignment,\AfterEndEnvironment,\appto}
+
 \DoNotIndex{\baselineskip,\begin,\boolfalse,\begingroup,\box}
+\DoNotIndex{\BeforeBeginEnvironment,\bfseries,\bgroup,\boxmaxdepth}
+
 \DoNotIndex{\color@endgroup,\color@setgroup,\columnwidth,\csdef,\c@mpfootnote,\csname}
+\DoNotIndex{\clip,\color,\color@begingroup,\coordinate,\csappta,\csuse,\csxdef,\Currentoption}
+
 \DoNotIndex{\dimexpr,\DeclareBoolOption,\DeclareListParser,\def,\define@key,\dimen@,\dimen@i,\dp,\deflength}
-\DoNotIndex{\eject,\end,\endtrivlist,\edef,\else,\endcsname,\endinput,\expandafter,\endgroup}
-\DoNotIndex{\fwd@reserved@a,\fwd@reserveda}
-\DoNotIndex{\hbox,\height,\hrule,\hsize,\hspace,\ht}
+\DoNotIndex{\DeclareDefaultOption,\defcounter,\DisableKeyvaloption}
+
+\DoNotIndex{\eject,\end,\endtrivlist,\edef,\else,\endcsname,\endinput,\expandafter,\endgroup\egroup,\enlargethispage}
+
+\DoNotIndex{\fwd@reserved@a,\fwd@reserveda,\fi,\fill,\forcsvlist}
+
+\DoNotIndex{\gdef}
+
+\DoNotIndex{\hbox,\height,\hrule,\hsize,\hspace,\ht,\hb@xt@,\hss}
+
 \DoNotIndex{\if@minipage,\if@twocolumn,\if@twoside,\ifbool,\ifdim,\ifdimequal}
 \DoNotIndex{\ifdimgreater,\ifdimless,\iffwd@footnoteinside,\ifinner,\ifnum,\ifodd}
-\DoNotIndex{\ifvoid,\ifx,\item}
+\DoNotIndex{\ifblank,\ifboolexpr,\ifcase,\ifcsundef,\IfFileExists,\ifnumequal,\ifstrequal}
+\DoNotIndex{\iftoggle,\ifundef,\input,\kernel@ifnextchar,\ifvoid,\ifx,\item}
+
 \DoNotIndex{\kern}
-\DoNotIndex{\leftline,\let,\linewidth,\lrbox}
-\DoNotIndex{\maxdimen,\medskipamount,\MessageBreak}
-\DoNotIndex{\NeedsTeXFormat,\newcounter,\newlength,\newrobustcmd,\next,\nobreak,\normalcolor,\number}
+
+\DoNotIndex{\leftline,\let,\linewidth,\lrbox,\large,\letcs,\listadd,\llap,\lowercase}
+
+\DoNotIndex{\maxdimen,\medskipamount,\MessageBreak,\makebox}
+
+\DoNotIndex{\NeedsTeXFormat,\newcounter,\newlength,\newrobustcmd,\nobreak,\normalcolor,\number}
+\DoNotIndex{\newbool,\newcommand,\newenvironment,\newtheorem,\newtoggle,\node,\noindent}
+\DoNotIndex{\notblank,\notbool,\null,\newpsstyle}
+\DoNotIndex{\next}
+
+\DoNotIndex{\or}
+
 \DoNotIndex{\p@,\PackageInfo,\PackageWarning,\pagegoal,\pagetotal,\partopsep,\patchcmd,\penalty}
-\DoNotIndex{\ProcessKeyvalOptions,\ProvidesPackage}
-\DoNotIndex{\relax,\RequirePackage}
+\DoNotIndex{\ProcessKeyvalOptions,\ProvidesPackage,\providecommand,\path}
+\DoNotIndex{\protected@edef,\ProvidesFile,\psframe,\psline,\psset,\pst@number,\psxunit}
+\DoNotIndex{\par,\parfillskip,\parindent,\PassOptionsToPackage,\pgfmathsetlengthmacro}
+
+\DoNotIndex{\relax,\RequirePackage,\raggedright,\renewcommand,\rlap,\rput,\rule}
+
 \DoNotIndex{\setbox,\setkeys,\setlength,\SetupKeyvalOptions,\splitmaxdepth,\splittopskip,\stepcounter,\strutbox}
-\DoNotIndex{\textwidth,\the,\thempfn,\thempfootnote,\topsep,\trivlist,\tw@}
+\DoNotIndex{\setbool,\settoggle,\space,\string}
+
+\DoNotIndex{\textwidth,\the,\thempfn,\thempfootnote,\topsep,\trivlist,\tw@,\tikzset}
+
 \DoNotIndex{\unskip,\unvbox}
+
 \DoNotIndex{\value,\vbox,\vfill,\vsize,\vskip,\vsplit}
-\DoNotIndex{\width}
-\DoNotIndex{\z@,\z@skip,\zref@addprop,\zref@extract,\zref@label,\zref@newprob,\zref@refused,\ZREF@mainlist}
+
+\DoNotIndex{\width,\wd}
+
+\DoNotIndex{\xifinlist}
+
+\DoNotIndex{\z@,\z@skip,\zref@addprop,\zref@extract,\zref@label,\zref@newprop,\zref@refused,\ZREF@mainlist}
 
 \IndexPrologue{\section*{Index}%
                  \markboth{Index}{Index}The index only collect package relevant words.}
@@ -278,8 +319,8 @@
    \global\advance\c@CodelineNo\@ne
    \@for\next:=#1\do
        {%
-       \SpecialMainIndex{\next}\nobreak
-       \DoNotIndex{\ \next}}%
+       \expandafter\SpecialMainIndex\expandafter{\next}\nobreak
+       \expandafter\DoNotIndex\expandafter{\next}}%
   \global\advance\c@CodelineNo\m@ne
   \ignorespaces}
 
