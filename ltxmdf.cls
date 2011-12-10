@@ -8,15 +8,15 @@
 %% Public License, as described in lppl.txt in the base LaTeX distribution.
 %% Either version 1.0 or, at your option, any later version.
 
-%%$Id: ltxmdf.cls 253 2011-12-04 14:37:51Z marco $
-%%$Rev: 253 $
+%%$Id: ltxmdf.cls 269 2011-12-09 12:14:02Z marco $
+%%$Rev: 269 $
 %%$Author: marco $
-%%$Date: 2011-12-04 15:37:51 +0100 (So, 04. Dez 2011) $
+%%$Date: 2011-12-09 13:14:02 +0100 (Fr, 09. Dez 2011) $
 
 %% Allgemeine Angaben
 \def\ltxmdf@svn$#1: #2 #3 #4-#5-#6 #7 #8${#4/#5/#6\space }
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{ltxmdf}[\ltxmdf@svn$Id: ltxmdf.cls 253 2011-12-04 14:37:51Z marco $ ltxmdf]
+\ProvidesPackage{ltxmdf}[\ltxmdf@svn$Id: ltxmdf.cls 269 2011-12-09 12:14:02Z marco $ ltxmdf]
 \DeclareOption{tocdepthsec}{\def\ltxmdf@tocdepth{1}}
 \DeclareOption{tocdepthsub}{\def\ltxmdf@tocdepth{2}}
 \newif\ifltxmdf@lipsum
@@ -92,7 +92,7 @@
 \def\ltxmdfsetifoot$#1: #2 #3 #4-#5-#6 #7 #8${%
   \ifoot{#2 #3 #4-#5-#6 #7 #8}
 }
-\ltxmdfsetifoot$Id: ltxmdf.cls 253 2011-12-04 14:37:51Z marco $
+\ltxmdfsetifoot$Id: ltxmdf.cls 269 2011-12-09 12:14:02Z marco $
 
 
 %Tikz und Farbe
@@ -164,6 +164,9 @@
 \def\author#1{\def\@author{#1}}
 \def\version#1{\def\@version{#1}}
 \def\date#1{\def\@date{#1}}
+\def\@@date$#1: #2 #3 #4-#5-#6 #7 #8${#4/#5/#6}
+\date{\@@date$Id: ltxmdf.cls 269 2011-12-09 12:14:02Z marco $}
+
 \long\def\introduction#1{\def\@introduction{#1}}
 
 \def\maketitle{%
